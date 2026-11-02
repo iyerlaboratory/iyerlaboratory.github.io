@@ -1,0 +1,13 @@
+# Kept on this computer only, not published to GitHub
+news-photos/
+gallery-raw/
+_source/unused/
+*.pptx
+*.HEIC
+.DS_Store
+__pycache__/
+*.zip
+_source/raw-movies/
+_source/old-movies/
+_source/old-images/
+HANDOFF.md
