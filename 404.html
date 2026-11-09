@@ -5,9 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found · Iyer Laboratory, Rice University</title>
   <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="4; url=/">
   <link rel="icon" href="/assets/img/favicon.svg">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    // Old WordPress addresses: send each kind to the matching new page.
+    (function () {
+      var p = location.pathname.toLowerCase(), to = "/";
+      if (/^\/publication/.test(p)) to = "/publications.html";
+      else if (/^\/(lab-member|team|people)/.test(p)) to = "/team.html";
+      else if (/^\/research/.test(p)) to = "/research.html";
+      else if (/^\/(lab-news|news|\d{4}\/)/.test(p)) to = "/news.html";
+      else if (/^\/(join|contact)/.test(p)) to = "/join.html";
+      else if (/^\/resource/.test(p)) to = "/resources.html";
+      setTimeout(function () { location.replace(to); }, to === "/" ? 3000 : 0);
+    })();
+  </script>
 </head>
 <body>
   <main style="max-width:640px;margin:18vh auto;padding:0 24px;text-align:center">
