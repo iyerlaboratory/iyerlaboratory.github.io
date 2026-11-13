@@ -572,3 +572,7 @@ p, .lede, .serif-lede, .news-item h3, .card p { text-wrap: pretty; }
 .news-tile h3 { font-size: 18px; font-weight: 500; line-height: 1.35; margin: 0; color: var(--navy); text-wrap: pretty; }
 @media (max-width: 900px) { .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .news-grid { grid-template-columns: 1fr; gap: 32px; } .news-year-head { font-size: 28px; } }
+
+/* ---------- Home hero fills the first screen (2026-11-13) ---------- */
+.hero { min-height: calc(100vh - 77px); min-height: calc(100svh - 77px); display: flex; align-items: center; box-sizing: border-box; }
+.hero > .wrap { width: 100%; }
